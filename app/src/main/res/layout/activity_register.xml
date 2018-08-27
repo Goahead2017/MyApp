@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:background="#2894FF"
+        app:title="注册"
+        android:paddingTop="14dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:hint="请输入用户名(不超过10位)"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="280dp"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="80dp"
+        android:inputType="text"
+         />
+
+    <com.cqupt.personal.app.DIYView.PasswordVisibilityEditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:hint="请输入密码(不超过16位)"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="80dp"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/et1"
+        android:layout_marginLeft="80dp"
+        android:inputType="number"
+        android:layout_marginRight="20dp"
+        android:maxLength="16"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="286dp"
+        android:src="@drawable/user"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentLeft="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/password"
+        android:layout_marginBottom="8dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignBottom="@+id/et2"
+        android:layout_alignLeft="@+id/imageView"
+        tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="请输入邮箱地址"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="80dp"
+            android:layout_below="@id/et2"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_markunread_black_30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="33dp"
+            android:layout_below="@id/et2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
+
+        <!--<Button-->
+            <!--android:id="@+id/send"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="#CEFFCE"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/et2"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:text="发送验证码"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#d0d0d0"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginEnd="20dp" />-->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/et3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#93FF93"
+            android:text="注册"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/cat1"
+        tools:ignore="ContentDescription"
+       />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#93FF93"
+        android:textSize="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="欢迎,喵~"
+        android:visibility="gone"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp" />
+
+</RelativeLayout>

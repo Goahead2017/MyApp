@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <TextView
+        android:id="@+id/child_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:textSize="15sp"
+        android:textColor="@color/blueSky"
+        android:layout_gravity="center_vertical"/>
+
+    <com.cqupt.personal.app.DIYView.View
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+</LinearLayout>

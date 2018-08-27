@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="#2894FF"-->
+        <!--app:title="聊聊天"-->
+        <!--android:paddingTop="14dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#EEEEEE"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:padding="4dp">
+
+        <EditText
+            android:id="@+id/et"
+            android:background="@drawable/bg_et"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textSize="14sp"
+            android:paddingLeft="4dp"
+            android:layout_margin="4dp"
+            android:paddingStart="4dp" />
+
+        <TextView
+            android:id="@+id/tvSend"
+            android:background="@drawable/bg_send"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textSize="12sp"
+            android:layout_margin="4dp"
+            android:textColor="#FFFFFF"
+            android:text="发送"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
